@@ -1,0 +1,22 @@
+"*":
+  "exception-reporting":
+    userId: "4da5bde4-0554-7656-5e6b-f4885c69ae64"
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+    projectHome: "/Users/1/Developer"
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+  "atom-material-ui":
+    panelContrast: true
+    rippleAccentColor: true
+    showTabIcons: true
+  pigments: {}
+  "merge-conflicts": {}
+  "travis-ci-status": {}
+  linter: {}
