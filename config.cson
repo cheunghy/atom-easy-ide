@@ -4,10 +4,6 @@
   welcome:
     showOnStartup: false
   core:
-    themes: [
-      "one-light-ui"
-      "one-light-syntax"
-    ]
     projectHome: "/Users/1/Developer"
   editor:
     invisibles: {}
@@ -20,3 +16,5 @@
   "merge-conflicts": {}
   "travis-ci-status": {}
   linter: {}
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
