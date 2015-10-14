@@ -5,3 +5,10 @@ dev
 .node-gyp
 .apm
 packages
+
+
+# npm
+/npm-debug.log
+
+# project manager uses this file
+/projects.cson

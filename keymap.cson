@@ -31,7 +31,11 @@
   'ctrl-z g g': 'git-plus:status'
   ##### Moving
   'ctrl-l': 'vim-mode:scroll-cursor-to-middle-leave'
+
 'atom-workspace':
+  ##### Close
+  'ctrl-x ctrl-c': 'application:quit'
+  'ctrl-x ctrl-z': 'application:minimize'
   ##### Configuration
   'ctrl-z c i': 'application:open-your-init-script'
   'ctrl-z c k': 'application:open-your-keymap'

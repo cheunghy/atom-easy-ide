@@ -5,13 +5,25 @@
     showOnStartup: false
   core:
     projectHome: "/Users/1/Developer"
+    disabledPackages: [
+      "linter-haml"
+      "linter-coffeescript"
+      "terminal-plus"
+      "vim-mode"
+    ]
   editor:
     invisibles: {}
     showIndentGuide: true
+    fontSize: 13
   "atom-material-ui":
     panelContrast: true
     rippleAccentColor: true
     showTabIcons: true
+  "open-in-external-app":
+    e: "Emacs"
+    s: "Sublime Text"
+    t: "TextMate"
+    f: "Finder"
   pigments: {}
   "merge-conflicts": {}
   "travis-ci-status": {}
