@@ -8,8 +8,8 @@
     disabledPackages: [
       "linter-haml"
       "linter-coffeescript"
-      "terminal-plus"
       "vim-mode"
+      "terminal-plus"
     ]
   editor:
     invisibles: {}
