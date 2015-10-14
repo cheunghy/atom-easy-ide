@@ -1,12 +1,19 @@
-storage
-compile-cache
+# dev packages?
 dev
-.npm
-.node-gyp
-.apm
-packages
 
-# npm
+# Atom internal
+compile-cache
+packages
+storage
+
+# Apm internal
+.apm
+
+# node gyp internal
+.node-gyp
+
+# npm internal
+.npm
 /npm-debug.log
 /node_modules
 
