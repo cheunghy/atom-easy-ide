@@ -23,4 +23,4 @@ syncPackageAfterwards = () ->
   atom.packages.onDidLoadPackage(syncPackageLists)
   atom.packages.onDidUnloadPackage(syncPackageLists)
 
-atom.packages.onDidLoadInitialPackages(syncPackageAfterwards)
+atom.packages.onDidActivateInitialPackages(syncPackageAfterwards)
