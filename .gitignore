@@ -6,9 +6,9 @@ dev
 .apm
 packages
 
-
 # npm
 /npm-debug.log
+/node_modules
 
 # project manager uses this file
 /projects.cson
