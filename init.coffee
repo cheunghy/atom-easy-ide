@@ -1,26 +1,15 @@
-{exec} = require 'child_process'
-_ = require 'underscore-plus'
-fs = require 'fs'
-{packages} = require 'atom'
+##### atom-easy-ide
 
-userPackageJson = atom.getConfigDirPath() + '/package.json'
+## atom-easy-ide is a self-documenting atom configuration, it aims easy to
+## use and cross platform.
 
-syncPackageLists = () ->
-  exec "/usr/local/bin/apm list --installed --bare", (e, out, err) ->
-    if (e)
-      atom.notifications.addError("Sync package failed. #{out} #{err}")
-    else
-      lines = out.split("\n")
-        .filter (l) -> l.length > 0
-        .map (l) -> l.split('@')
-      pkgList = _.inject lines, ((obj, arr) -> obj[arr[0]] = arr[1]; obj), {}
-      retval = JSON.parse(fs.readFileSync(userPackageJson, 'utf8'))
-      retval.packageDependencies = pkgList
-      fs.writeFileSync(userPackageJson, JSON.stringify(retval, null, '  '))
-      atom.notifications.addSuccess("Synced packages.")
+aide = window.aide = {}
 
-syncPackageAfterwards = () ->
-  atom.packages.onDidLoadPackage(syncPackageLists)
-  atom.packages.onDidUnloadPackage(syncPackageLists)
+#### Setup package management (syncing)
 
-atom.packages.onDidActivateInitialPackages(syncPackageAfterwards)
+require './conf/package-sync'
+
+#### Setup directory structure
+
+aide.confDir = atom.getConfigDirPath() + '/conf'
+aide.etcDir = atom.getConfigDirPath() + '/etc'
