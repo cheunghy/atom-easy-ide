@@ -10,6 +10,11 @@
       "linter-coffeescript"
       "vim-mode"
       "terminal-plus"
+      "emmet"
+    ]
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
     ]
   editor:
     invisibles: {}
